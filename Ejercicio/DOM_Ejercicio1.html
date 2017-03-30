@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- If you need to support IE 9 or IE 8-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- So responsive design works in small mobile devices (phones,...) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boostrap template Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <!--link rel="stylesheet" href="css/mystyle.css"-->
+
+  </head>
+<body>  
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous">
+  </script>
+  <div id=principal>
+      <h1 id=t1>Ejercicio DOM </h1>
+  </div>
+  <script>
+
+
+
+    var miDiv=document.getElementById("principal");
+    var tag_p = document.createElement('p');
+    var tag_em = document.createElement('em');
+    var tag_strong = document.createElement('strong');
+    var texto1 = document.createTextNode('Paragraph with an ');
+    var texto2 = document.createTextNode('emphasized');
+    var texto3 = document.createTextNode(' word and ');
+    var texto4 = document.createTextNode('others more emphasized');
+    var texto5 = document.createTextNode('.');
+    tag_em.appendChild(texto2);
+    tag_strong.appendChild(texto4);
+    tag_p.appendChild(texto1);
+    tag_p.appendChild(tag_em);
+    tag_p.appendChild(texto3);
+    tag_p.appendChild(tag_strong);
+    miDiv.appendChild(tag_p);
+  </script>
+
+</body>
+</html>

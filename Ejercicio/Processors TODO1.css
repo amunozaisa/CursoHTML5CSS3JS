@@ -1,0 +1,21 @@
+$azul-corporativo: blue;
+#element1 {
+	font-size: 4em;
+	p {
+	  font-size:3em;
+	  a{
+	    font-size: 2em;
+	    &.special{
+	      font-weight:blod;
+	    }
+	  }
+	  &.special{
+	    font-color: $azul-corporativo;
+	  }
+	}
+	
+}
+
+div.special {
+  color: $azul-corporativo; 
+}
